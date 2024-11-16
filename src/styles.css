@@ -1,7 +1,5 @@
 @import "~bulma/css/bulma.min.css";
 
 @media (prefers-color-scheme: dark) {
-    :root {
-        
-    }
+    
 }
