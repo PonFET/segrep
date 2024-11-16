@@ -2,10 +2,8 @@ import { Component } from '@angular/core';
 
 @Component({
   selector: 'app-root',
-  template: `
-    <h2>it werk</h2>
-  `,
-  styleUrls: ['./app.component.css']
+  templateUrl: './app.component.html',
+  styles: [],
 })
 export class AppComponent {
   title = 'segrep';
