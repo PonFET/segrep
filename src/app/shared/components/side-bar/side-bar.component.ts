@@ -1,7 +1,7 @@
 import { Component } from '@angular/core';
 
 @Component({
-  selector: 'app-side-bar',
+  selector: 'shared-side-bar',
   templateUrl: './side-bar.component.html',
   styles: [],
 })
