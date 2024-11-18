@@ -1,6 +1,7 @@
 import { NgModule } from "@angular/core";
-import { NgModel } from "@angular/forms";
 import { RouterModule, Routes } from "@angular/router";
+import { LoginPageComponent } from "./pages/login-page/login-page.component";
+import { SignUpPageComponent } from "./pages/sign-up-page/sign-up-page.component";
 
 
 
@@ -8,20 +9,29 @@ import { RouterModule, Routes } from "@angular/router";
 const routes: Routes = [
 
     {
-        path: '',
-        //component: ,
+        path: 'login',
+        component: LoginPageComponent,
+    },
+    {
+        path: 'sign-up',
+        component: SignUpPageComponent,
+    },
+    {
+        path: '**',
+        redirectTo: 'login',
     },
     {
         path: '',
-        redirectTo: '',
-    }
+        redirectTo: 'login',
+        pathMatch: 'full',
+    },
 ];
 
 @NgModule({
 
     declarations: [],
-    imports: [],
-    exports: [],
+    imports: [RouterModule.forChild(routes)],
+    exports: [RouterModule],
 })
 
 export class AuthRoutingModule { }
