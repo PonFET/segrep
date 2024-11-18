@@ -1,21 +1,10 @@
-
 <div class="container columns mt-5">
-  <aside class="menu"> <!--PLACEHOLDER-->
-    <p class="menu-label">General</p>
-    <ul class="menu-list">
-      <li><a href="#">Dashboard</a></li>
-      <li><a href="#">Clientes</a></li>
-    </ul>
-    <p class="menu-label">Configuraciones</p>
-    <ul class="menu-list">
-      <li><a href="#">Perfil</a></li>
-      <li><a href="#">Ajustes</a></li>
-    </ul>
-  </aside>
   
+  <shared-side-bar/>  
 
-  <div class="card column is-offset-1 has-text-centered">
-    <!--PAGE HERE-->PAGE
+  <div class="card column is-offset-1 has-text-centered has-background-grey-darker">
+    <router-outlet />
   </div>
+
 </div>
   
