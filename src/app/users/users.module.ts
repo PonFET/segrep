@@ -3,7 +3,7 @@ import { ProfilePageComponent } from './pages/profile-page/profile-page.componen
 import { ClientsPageComponent } from './pages/clients-page/clients-page.component';
 import { RepairersPageComponent } from './pages/repairers-page/repairers-page.component';
 import { UsersRoutingModule } from "./users-routing.module";
-import { DashboardPageComponent } from './pages/dashboard-page/dashboard-page.component';
+import { CompaniesPageComponent } from './pages/companies-page/companies-page.component';
 
 
 
@@ -14,7 +14,7 @@ import { DashboardPageComponent } from './pages/dashboard-page/dashboard-page.co
     ProfilePageComponent,
     ClientsPageComponent,
     RepairersPageComponent,
-    DashboardPageComponent
+    CompaniesPageComponent,
   ],
     imports: [
       UsersRoutingModule,
