@@ -1,5 +1,10 @@
 {
     "root": [
         {  "name": "root", "password": "toor"   }
-    ]
+    ],
+    "clients": [],
+    "repairers": [],
+    "companies": [],
+    "fixes": [],
+    "steps": []
 }

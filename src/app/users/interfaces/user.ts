@@ -12,6 +12,7 @@ export interface Client extends User {
     lastName: string;
     dni: number;
     address: string;
+    clientId: number;
 }
 
 
