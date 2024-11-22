@@ -1,5 +1,6 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
+import { AboutPageComponent } from './shared/pages/about-page/about-page.component';
 
 
 
@@ -17,6 +18,10 @@ const routes: Routes = [
   {
     path: 'fixes',
     loadChildren: () => import('./fixes/fixes.module').then(m => m.FixesModule),
+  },
+  {
+    path: 'about',
+    component: AboutPageComponent,
   },
   {
     path: '**',
