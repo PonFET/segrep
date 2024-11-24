@@ -3,8 +3,6 @@ import { HttpClient } from '@angular/common/http';
 import { Observable } from 'rxjs';
 import { Client, Repairer, Company } from '../interfaces/user';
 
-//Debería usar el tipo Partial<type> o un objeto entero para modificar?
-//Con Partial<type> puedo hacer el PATCH, mientras que con un objeto entero sería un PUT.
 
 
 
@@ -38,10 +36,10 @@ export class UsersService {
     return this.http.post<Client>(`${this.apiUrl}/clients`, client);
   }
 
-  /*updateClient(id: number, client: Partial<Client>): Observable<Client> {
+  updateClient(id: number, client: Partial<Client>): Observable<Client> {
 
     return this.http.patch<Client>(`${this.apiUrl}/clients/${id}`, client);
-  }*/
+  }
 
   deleteClient(id: number): Observable<void> {
 
@@ -66,10 +64,10 @@ export class UsersService {
     return this.http.post<Repairer>(`${this.apiUrl}/repairers`, repairer);
   }
 
-  /*updateRepairer(id: number, repairer: Partial<Repairer>): Observable<Repairer> {
+  updateRepairer(id: number, repairer: Partial<Repairer>): Observable<Repairer> {
 
     return this.http.patch<Repairer>(`${this.apiUrl}/repairers/${id}`, repairer);
-  }*/
+  }
 
   deleteRepairer(id: number): Observable<void> {
 
@@ -94,10 +92,10 @@ export class UsersService {
     return this.http.post<Company>(`${this.apiUrl}/companies`, company);
   }
 
-  /*updateCompany(id: number, company: Partial<Company>): Observable<Company> {
+  updateCompany(id: number, company: Partial<Company>): Observable<Company> {
 
     return this.http.patch<Company>(`${this.apiUrl}/companies/${id}`, company);
-  }*/
+  }
 
   deleteCompany(id: number): Observable<void> {
 
